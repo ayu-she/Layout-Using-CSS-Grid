@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4 {
+  color: #5b5f66;
+}
+
+p {
+  font-size: small;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: "Roboto", sans-serif;
+}
+
+header, .wrapper2 {
+  color: white;
+  height: 70vh;
+  background: url("https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80") no-repeat center center/cover;
+  width: 95%;
+  grid-area: header;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1%;
+}
+header h4, .wrapper2 h4 {
+  color: white;
+}
+
+.logo, nav {
+  display: flex;
+}
+
+nav {
+  justify-content: space-between;
+  margin: 2% 10%;
+  padding: 2%;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-right: 5px;
+  font-size: small;
+}
+nav a:hover {
+  color: steelblue;
+}
+
+.links {
+  float: right;
+  color: white;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: space-between;
+  width: 80%;
+  margin: 8% auto;
+}
+.grid1 p {
+  font-size: smaller;
+}
+
+.button, .button2 {
+  background: #43c596;
+  padding: 5% 10%;
+  border: none;
+  border-radius: 1%;
+  color: white;
+}
+
+.button2 {
+  padding: 1% 2%;
+  margin-top: 2%;
+}
+
+.col p {
+  font-size: xx-small;
+}
+
+button {
+  border: 10x solid gainsboro;
+  background-color: transparent;
+  color: white;
+  padding: 5px 10px;
+}
+
+.wrapper1, .wrapper4 .container4, .wrapper5 .container4, .wrapper3 {
+  width: 60%;
+  margin: 2% auto;
+}
+.wrapper1 p, .wrapper4 .container4 p, .wrapper5 .container4 p, .wrapper3 p {
+  color: #9e9ea7;
+}
+
+.wrapper1 .container1, .wrapper4 .container4 .container1, .wrapper5 .container4 .container1, .wrapper3 .container1 {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 2fr;
+}
+.wrapper1 .container1 p, .wrapper4 .container4 .container1 p, .wrapper5 .container4 .container1 p, .wrapper3 .container1 p {
+  font-size: small;
+}
+
+.wrapper2 {
+  width: 80vw;
+  height: fit-content;
+  padding: 5%;
+  padding-bottom: 20%;
+  background: url("https://images.unsplash.com/photo-1481278403982-f2d9f387cdcc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGdyZWVuJTIwbW91bnRhaW5zJTIwd2l0aCUyMGdyZXklMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover;
+}
+.wrapper2 p {
+  color: #9e9ea7;
+}
+
+.wrapper2 .container2 {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  color: black;
+  padding: 10% auto;
+  justify-content: space-between;
+}
+
+.wrapper3 .container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  text-align: center;
+}
+
+.wrapper4, .wrapper5 {
+  width: 80vw;
+  background-color: #eef1f4;
+  padding: 5%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper4 .container4, .wrapper5 .container4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap: 1rem;
+}
+.wrapper4 .container4 p, .wrapper5 .container4 p {
+  font-size: x-small;
+  line-height: 1rem;
+}
+.wrapper4 .container4 .person, .wrapper5 .container4 .person {
+  color: steelblue;
+}
+
+.wrapper5 {
+  background-color: #408fbd;
+  color: gainsboro;
+}
+.wrapper5 h2, .wrapper5 a {
+  color: white;
+}
+
+footer {
+  width: 60%;
+  margin: 1% auto;
+  font-size: x-small;
+}
+footer a {
+  color: #9e9ea7;
+  text-decoration: none;
+  margin: 2px;
+}
+footer a::after {
+  content: "/";
+}
+footer a:last-child::after {
+  content: "";
+}
+footer .bottom {
+  display: flex;
+}
+footer .bottom p {
+  color: blue;
+  font-size: x-small;
+}
+
+li {
+  list-style-type: none;
+  border: 1px solid #9e9ea7;
+  background-color: gainsboro;
+  margin-left: 5px;
+  margin-top: 10px;
+  padding: 1px;
+  font-size: xx-small;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+
+@media (max-width: 500px) {
+  .grid1 {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper1 .container1, .wrapper3 .container1, .wrapper4 .container4 .container1, .wrapper5 .container4 .container1 {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper2 .container2 {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper3 .container3 {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper4 .container4, .wrapper5 .container4 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    align-items: center;
+    float: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+.button{
+    background: rgb(67, 197, 150);
+    padding: 5% 10%;
+    border: none;
+    border-radius: 1%;
+    color: $text-color;
+}
+
+.button2{
+    @extend .button;
+    padding: 1% 2%;
+    margin-top: 2%;
+}
+
+button{
+    border: 10x solid $border-color;
+    background-color: transparent;
+    color: $text-color;
+    padding: 5px 10px;
+}
